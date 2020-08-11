@@ -1,10 +1,30 @@
-<html>
-<head>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
-Crazy designing
-</body>
+---
+layout: base
+---
 
-<script type="text/javascript" src="index.js"/>
-</html>
+<div class='preloader'>
+    <div class='loaded'>&nbsp;</div>
+</div>
+
+{% include carousal.html %}
+{% include services.html %}
+{% include gallery.html %}
+{% include features.html %}
+{% include testimonial.html %}
+{% include our-clients.html %}
+{% include contact.html %}
+
+{%
+include structuredData.html
+headline=page.title
+genre=page.category
+keywords=page.keywords
+content=page.content
+link=page.permalink
+date=page.date
+%}
+
+
+
+
+

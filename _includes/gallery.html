@@ -1,0 +1,41 @@
+<!-- Sections -->
+<section id="gallery" class="sections light-dark-bg">
+    <div class="container text-center">
+        <div class="heading-content">
+            <h3>Our Gallery</h3>
+            <h5>Below are some of our innovative designs and samples you could choose from. </h5>
+        </div>
+        {% for row in {{site.data.gallery.gallery-items}} %}
+        <div class="row">
+            {% for item in row.items %}
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="gallery-item">
+                    <div class="gallery">
+                        <img src="assets/images/gallery/{{item.url}}" alt=""/>
+                        <h6>{{item.title}}</h6>
+                        <div class="img-overlay"></div>
+                        <div class="gallery-icon">
+                            <a class="gallery-img" href="assets/images/gallery/{{item.url}} ">View More</a>
+                        </div>
+                    </div>
+                    <p>{{item.description}}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        {% endfor %}
+
+        <div class="container">
+            <div class="col-md-12 text-center">
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#allGallery">
+                    <b>
+                        View More
+                    </b>
+                </button>
+            </div>
+        </div>
+        <hr/>
+
+        {% include whole-gallery.html %}
+</section>
