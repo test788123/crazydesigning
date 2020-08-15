@@ -17,8 +17,15 @@
     }
 }
 
-@media(max-width: 991){
+@media(max-width: 991px){
     .navbar-header{
         margin-bottom: 0px;
     }
+
+      #bs-example-navbar-collapse-1{
+            background-color: #ffc107bf;
+        }
+        .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+          border-top:none;
+        }
 }
