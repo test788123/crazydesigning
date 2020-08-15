@@ -1,0 +1,24 @@
+.navbar-brand {
+    display: flex;
+    color: $white;
+    padding: 10px 0;
+    .header-logo{
+        height: 50px;
+        width: 100px;
+        padding-right: 30px;
+    }
+    .brand-title{
+        font-size: 20px;
+        color: $white
+    }
+    .brand-subtitle{
+        font-size: 10px;
+        color: $white;
+    }
+}
+
+@media(max-width: 991){
+    .navbar-header{
+        margin-bottom: 0px;
+    }
+}
