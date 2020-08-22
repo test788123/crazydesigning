@@ -1,0 +1,12 @@
+.service-img {
+  height: 250px;
+  width: 250px;
+  padding-bottom: 10px;
+  border-bottom: 1px groove #d0e9c6;
+  transition: opacity .5s ease-in-out;
+   border-radius: 50%;
+}
+
+.service-img:hover {
+  opacity: 0.6;
+}
